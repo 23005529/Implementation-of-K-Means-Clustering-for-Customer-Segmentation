@@ -39,7 +39,8 @@ d.info()
 ```
 d.isnull().sum()
 ```
-![image](https://github.com/user-attachments/assets/d7918bf7-5721-4666-a228-2eb83a2ed48a)
+![image](https://github.com/user-attachments/assets/eb3a848f-8aaa-455e-a410-9eed91bdad94)
+
 # Elbow method graph (wcss vs each iteration):
 ```
 from sklearn.cluster import KMeans
@@ -57,7 +58,8 @@ km.fit(d.iloc[:,3:])
 y_pred = km.predict(d.iloc[:,3:])
 y_pred
 ```
-![image](https://github.com/user-attachments/assets/8393afca-931b-4256-bd22-193ddf679faf)
+![image](https://github.com/user-attachments/assets/3bf16206-07f5-4a33-93b2-8443c838503d)
+
 # Cluster represnting customer segments-graph:
 ```
 d["clusters"]=y_pred
@@ -74,7 +76,8 @@ plt.scatter(df4["Annual Income (k$)"],df4["Spending Score (1-100)"],c="black",la
 plt.legend()
 plt.title("Customer Segments")
 ```
-![image](https://github.com/user-attachments/assets/fb99ffd3-39ac-4af4-bd15-fabe249660bc)
+![image](https://github.com/user-attachments/assets/757ca343-0874-4523-a093-c1107bdaae9a)
+
 
 ## Result:
 Thus the program to implement the K Means Clustering for Customer Segmentation is written and verified using python programming.
