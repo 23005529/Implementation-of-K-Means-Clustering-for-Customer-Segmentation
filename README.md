@@ -24,24 +24,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 d=pd.read_csv("Mall_Customers.csv")
 ```
-# DATA SET:
-```
-d.head()
-```
+
 ![image](https://github.com/user-attachments/assets/3679d1af-a179-4514-b49b-a968b645c913)
 
-# DATA INFO:
-```
-d.info()
-```
+
 ![image](https://github.com/user-attachments/assets/376cb220-7c08-496b-a4a7-522d6fb835ce)
 
-```
-d.isnull().sum()
-```
 ![image](https://github.com/user-attachments/assets/eb3a848f-8aaa-455e-a410-9eed91bdad94)
 
-# Elbow method graph (wcss vs each iteration):
+
 ```
 from sklearn.cluster import KMeans
 wcss = []
@@ -60,7 +51,6 @@ y_pred
 ```
 ![image](https://github.com/user-attachments/assets/3bf16206-07f5-4a33-93b2-8443c838503d)
 
-# Cluster represnting customer segments-graph:
 ```
 d["clusters"]=y_pred
 df0=d[d["clusters"]==0]
