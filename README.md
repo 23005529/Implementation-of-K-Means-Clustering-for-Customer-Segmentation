@@ -28,12 +28,14 @@ d=pd.read_csv("Mall_Customers.csv")
 ```
 d.head()
 ```
-![image](https://github.com/user-attachments/assets/675251df-59d0-4028-ade4-5c61f756df1c)
+![image](https://github.com/user-attachments/assets/3679d1af-a179-4514-b49b-a968b645c913)
+
 # DATA INFO:
 ```
 d.info()
 ```
-![image](https://github.com/user-attachments/assets/be535a0a-2977-42e4-bacd-8b8030c82873)
+![image](https://github.com/user-attachments/assets/376cb220-7c08-496b-a4a7-522d6fb835ce)
+
 ```
 d.isnull().sum()
 ```
